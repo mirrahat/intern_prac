@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #5c81fa;
+    --title-color: #111;
+    --txt-color: #555;
+    --txt-light-color: #777;
+    --border-color: #ececec;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--txt-color);
+    min-height: 100vh;
+    //   background: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Vesper Libre", serif;
+}
