@@ -5,58 +5,249 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Practice</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
 	<!-- css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="http://fonts.cdnfonts.com/css/mulish" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-
 	<div class="wrapper">
 		<div class="sidebar">
-			<h6>Dashboard Kit</h6>
-
-			<ul>
-				<li> <span></span> <a href="#"><i class=" fas fa fa-window-restore"></i><span>Home</span></a></li>
-				<li><a href="#"><i class="fa fas fa-user"></i>Profile</a></li>
-				<li><a href="#"><i class="fas fa  fa-address-card"></i>About</a></li>
-				<li><a href="#"><i class="fas fa fa-project-diagram"></i>portfolio</a></li>
-				<li><a href="#"><i class="fas fa fa-search"></i>Blogs</a></li>
-				<li><a href="#"><i class="fas fa fa-address-book"></i>Contact</a></li>
-				<li><a href="#"><i class="fas fa fa-bell"></i>Map</a></li>
+			<div class="dashboard flex">
+				<img src="./logo.png" style="height:32px;width:32px;margin-right:8px" />
+				<div>Dashboard Kit</div>
+			</div>
+			<ul style="margin-top: 7%;">
+				<li><a href="#"><i class=" fas fa fa-window-restore"></i><span class="sidemenu_name">Home</span></a>
+				</li>
+				<li><a href="#"><i class="fa fas fa-user "></i><span class="sidemenu_name">Profile</span></a></li>
+				<li><a href="#"><i class="fas fa  fa-address-card" style="padding-right: 20px"></i><span
+							class="sidemenu_name">Home</span></a></li>
+				<li><a href="#"><i class="fas fa fa-bell"></i><span class="sidemenu_name">Home</span></a></li>
+				<li><a href="#"><i class="fas fa fa-search"></i><span class="sidemenu_name">Home</span></a></li>
+				<li><a href="#"><i class="fa fas fa-user "></i><span class="sidemenu_name">Profile</span></a></li>
+				<li style="padding-bottom: 40px;"><a href="#"><i class="fas fa  fa-address-card"></i><span
+							class="sidemenu_name">Articles</span></a></li>
+				<li style="border-top: 2px solid #40414A;padding-top: 40px; "><a href="#"><i
+							class="fas fa fa-bell"></i><span class="sidemenu_name">Home</span></a></li>
+				<li><a href="#"><i class="fas fa fa-search"></i><span class="sidemenu_name">Home</span></a></li>
 			</ul>
-
 		</div>
 		<div class="main_content">
 			<div class="header">
-				<div>
+				<div class="overflow" style="color: black;">
 					Overview
 				</div>
 				<div class="search">
-					<div>
-						<i class="fa fas fa-search"></i>
-						<li><i class="fa fas fa-search"></i></li>
-						<li><a href="#"><i class="fa fa-bell"></i>Blogs</a></li>
-						<li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
-						<li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li>
+					<div class="nav_icon"
+						style="border-right:2px solid  #DFE0EB; height: 60%; margin-top:2px; margin-right: 10px;">
+						<i class="fa fas fa-search" style="padding: 8px 20px  8px 10px;"></i>
+						<i class="fa fas fa-bell" style="padding: 10px 10px 10px 10px;"></i>
+					</div>
+					<div class="nav_profile">
+						<li style="padding: 10px;" class="jones">Jones Ferdiand</li>
+						<li><img style="height: 50px; width: 50px;  border-radius: 100%;
+							box-shadow: inset 0px 0px 0px 3px white;
+							border: 4px solid #DFE0EB;" src="./ricky.jpg" /></li>
 					</div>
 				</div>
-
-
-
 			</div>
-			<div class="test">
-
-				<h1>
-					jjjjj
-
-				</h1>
+			<div class="card">
+				<div class="test">
+					<div class="card_title">Unresolved</div>
+					<div class="card_value">60</div>
+				</div>
+				<div class="test" style="border: 2px solid blue;   border-radius: 10px;">
+					<div class="card_title" style="color: blue;">Unresolved</div>
+					<div class="card_value" style="color: blue;">60</div>
+				</div>
+				<div class="test">
+					<div class="card_title">Unresolved</div>
+					<div class="card_value">60</div>
+				</div>
+				<div class="test">
+					<div class="card_title">Unresolved</div>
+					<div class="card_value">60</div>
+				</div>
 			</div>
-
-
+			<div class="grid">
+				<div class="graph">
+					<h4 class="theader">Today's trend</h4>
+					<div class="flex align">
+						<p class="theader ash  tdsec">as of 25 May 2019, 09:41 PM</p>
+						<hr>
+						<div class="flex space-between  bef_today bef_yesterday">
+							<hr>
+							<p class=" today">
+								Today</p>
+							<p class=" yesterday">
+								yesterday</p>
+						</div>
+					</div>
+					<img style="width: 100%;height:380px;padding-top:10px;margin-top:10px" src="./graph.png" alt="" />
+				</div>
+				<div class="stats">
+					<div class="stats-width">
+						<div>
+							<p class="ash-color  ginfo">Resolved</p>
+							<h3 class="margin   ginfo_value">449</h3>
+						</div>
+					</div>
+					<div class="stats-width">
+						<div>
+							<p class="ash-color ginfo">Received</p>
+							<h3 class="margin  ginfo_value">426</h3>
+						</div>
+					</div>
+					<div class="stats-width">
+						<div>
+							<p class="ash-color ginfo">Average first response time</p>
+							<h3 class="margin ginfo_value">33m</h3>
+						</div>
+					</div>
+					<div class="stats-width">
+						<div>
+							<p class="ash-color ginfo">Average response time</p>
+							<h3 class="margin  ginfo_value">3h 8m</h3>
+						</div>
+					</div>
+					<div class="stats-width">
+						<div>
+							<p class="ash-color  ginfo">Resolution within SLA</p>
+							<h3 class="margin ginfo_value">94%</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='flex main' style="margin-left: 2px;">
+				<div class='left'
+					style="background-color: white; padding-top: 30px; border-radius: 10px; padding-left: 15px;padding-right: 15px;">
+					<div class='flex center space-between '>
+						<div class="dots">
+							<div class="ticket_title ">Unresolved Tickets</div>
+							<p class='para'><span class='ash'
+									style="font-family: 'Mulish', sans-serif;   font-size: 12px;">Today</span> <span
+									style="font-family: 'Mulish', sans-serif;  font-size: 12px;" class="">Support</span>
+							</p>
+						</div>
+						<p class='blue details margin-handle'>View details</p>
+					</div>
+					<div class="ticket_options">
+						<div class=''>
+							<div class='flex center space-between tickets'>
+								<div class='padding-left  dots'>
+									<label for="html" class="ticket_l_title">Waiting on Feature request</label>
+								</div>
+								<p class='padding-right  ticket_l_value'><small class='ash'>1005</small></p>
+							</div>
+							<hr class='blue'>
+							</hr>
+						</div>
+						<div class=''>
+							<div class='flex center space-between tickets'>
+								<div class='padding-left  dots'>
+									<label for="html" class="ticket_l_title">Waiting on Feature request</label>
+								</div>
+								<p class='padding-right  ticket_l_value'><small class='ash'>1005</small></p>
+							</div>
+							<hr class='blue'>
+							</hr>
+						</div>
+						<div>
+							<div class='flex center space-between tickets'>
+								<div class='padding-left  dots'>
+									<label for="html" class="ticket_l_title">Waiting on Feature request</label>
+								</div>
+								<p class='padding-right  ticket_l_value'><small class='ash'>1005</small></p>
+							</div>
+							<hr class='blue'>
+							</hr>
+						</div>
+						<div class=''>
+							<div class='flex center space-between tickets'>
+								<div class='padding-left  dots'>
+									<label for="html" class="ticket_l_title">Waiting on Feature request</label>
+								</div>
+								<p class='padding-right  ticket_l_value'><small class='ash'>1005</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='right' style="background-color: white; padding-top: 30px; border-radius: 10px;">
+					<div class='flex center space-between' style="padding-left: 15px;padding-right: 15px;">
+						<div>
+							<div class="ticket_title">Tasks</div>
+							<p class='para'><span class='ash' style="font-family: 'Mulish', sans-serif; 
+				    font-size: 12px;">Today</span>
+							</p>
+						</div>
+						<p class='blue details margin-handle'>View details</p>
+					</div>
+					<div class="ticket_options">
+						<div class=''>
+							<div class='flex center space-between tickets'>
+								<div class='padding-left  dots'>
+									<label for="html" style="padding-left: 20px;"
+										style=" font-family: 'Mulish', sans-serif; font-size:14px;"
+										class=" ash ticket_l_title">Create new
+										ticket example</label>
+								</div>
+								<button class='plus-button'>
+									+
+								</button>
+							</div>
+							<hr class='blue'>
+							</hr>
+						</div>
+						<div class=''>
+							<div class='flex center space-between tickets'>
+								<div class='padding-left  dots'>
+									<input type="radio" id="html" style="height:20px; width:20px;" name="fav_language"
+										value="HTML"> <label for="html" style="padding-left: 20px;"
+										class="ticket_l_title">Create new
+										ticket example</label>
+								</div>
+								<button class='urgent-button tbutton'>
+									URGENT
+								</button>
+							</div>
+							<hr class='blue'>
+							</hr>
+						</div>
+						<div>
+							<div class='flex center space-between tickets'>
+								<div class='padding-left dots'>
+									<input type="radio" id="html" style="height: 20px; width: 20px; "
+										name="fav_language" value="HTML"><label for="html" style="padding-left: 20px;"
+										class="ticket_l_title">Create new
+										ticket example</label>
+								</div>
+								<button class='new-button tbutton'>
+									NEW
+								</button>
+							</div>
+							<hr class='blue'>
+							</hr>
+						</div>
+						<div class=''>
+							<div class='flex center space-between tickets'>
+								<div class='padding-left dots'>
+									<input type="radio" id="html" style="height: 20px; width: 20px; "
+										name="fav_language" value="HTML">
+									<label for="html" style="padding-left: 20px;" class="ticket_l_title">Create new
+										ticket example</label>
+								</div>
+								<button class='default-button tbutton'>
+									DEFAULT
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	</div>
